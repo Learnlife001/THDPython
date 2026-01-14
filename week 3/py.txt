@@ -1,0 +1,72 @@
+# print("The following problems of Exercise 3 are done by Okuma Chigozie.")
+
+# 1.
+cars = ['toyota', 'ford', 'bmw', 'audi', 'honda']
+print(cars[0])
+print(cars[-1])
+cars.append('mercedes')
+print(cars)
+cars.remove('ford')
+print(cars)
+
+# 2.
+colors = ("red", "green", "blue")
+print(colors[1])
+colors[1] = "yellow"
+# gives a typeerrror because tuples are immutable
+
+# 3.
+person = ("Alice", "25", "Berlin")
+print(person)
+print("Alice", "is", "25", "years", "old", "and", "lives", "in", "Berlin.")
+
+# 4.
+A = {1, 2, 3, 4}
+B = {3, 4, 5, 6}
+print(A | B)
+print(A & B)
+print(A - B)
+
+# 5.
+a = {1, 2, 3, 2, 1}
+print(a)
+# it prints only the unique values: {1, 2, 3}
+
+# 6.
+names = {'Alice': 7, 'Bob': 3, 'Charlie': 5}
+print(names)
+print(names['Alice'])
+names['David'] = 92
+print(names)
+names['Bob'] = 88
+print(names)
+
+# 7.
+capitals = {"Germany": "Berlin", "France": "Paris", "Italy": "Rome"}
+print("The", "capital", "of", "Germany", "is", capitals["Germany"])
+print("The", "capital", "of", "France", "is", capitals["France"])
+print("The", "capital", "of", "Italy", "is", capitals["Italy"])
+
+# 8.
+S = {20: 'Alice', 22: 'Bob'}
+print(S)
+{20: 'Alice', 22: 'Bob'}
+S.values()
+
+# 9.
+sentence = "The capital of Germany is Berlin"
+print(sentence)
+lst = ["The", "capital", "of", "Germany", "is", "Berlin"]
+print(lst[0:6])
+sentence = {"The", "capital", "of", "Germany", "is", "Berlin"}
+print(sentence)
+S = {'The': 3, 'capital': 7, 'of': 2, 'Germany': 7, 'is': 2, 'Berlin': 6}
+print(S)
+
+# 10.
+numbers = [10, 20, 30, 40, 50]
+total = 0
+for num in numbers:
+    print(num)
+    total = total + num
+print("Total:", total)
