@@ -1,0 +1,9 @@
+#mycount()
+
+mylist = []
+mylist.append("123")
+
+def myfunct5():
+    fs = FileSystem()
+    fs = None
+myfunct5()

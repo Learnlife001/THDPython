@@ -1,0 +1,17 @@
+import concurrent.futures
+
+
+def f(x,y):
+    x = x + y
+    print(f"Inside: {x}")
+    return x
+
+def main():
+    n_values = [4, 10, 20]
+    y_values = 2
+    with concurrent.futures.ThreadPoolExecutor() as executor:
+        results = executor.map(lambda n: f(n, y_values), n_values)
+    print(f"Final output: {list(results)}")
+
+if __name__ == "__main__":
+    main()
