@@ -1,2 +1,6 @@
 registration-template.xlsx
 tarski
+.tarski
+__pycache__/
+.venv/
+venv/
